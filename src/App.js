@@ -121,13 +121,14 @@ function App() {
   useEffect(() => {
     fetchCountry();
     fetchAllScores();
-  }, [isLoadingWords]);
+  }, []);
 
   // Load words when level changes
   useEffect(() => {
     if (page === 'game' && wordBank[level].length === 0 && !isLoadingWords) {
       loadWordsForLevel(level);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page, level, wordBank]);
 
   // ============================================================
