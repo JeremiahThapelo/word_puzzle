@@ -1,0 +1,336 @@
+/**.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}*/
+
+/**
+ * Word Puzzle Game — Styles
+ * ============================================================
+ * All styling for the game — clean, modern, and responsive.
+ */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 650px;
+  width: 100%;
+  text-align: center;
+}
+
+.menu button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  background: #e2e8f0;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.menu button:hover {
+  background: #cbd5e1;
+}
+
+.menu .play {
+  background: #3b82f6;
+  color: white;
+}
+
+.menu .play:hover {
+  background: #2563eb;
+}
+
+.menu .scores {
+  background: #f59e0b;
+  color: white;
+}
+
+.menu .scores:hover {
+  background: #d97706;
+}
+
+.menu .easy {
+  background: #22c55e;
+  color: white;
+}
+.menu .easy:hover {
+  background: #16a34a;
+}
+
+.menu .medium {
+  background: #eab308;
+  color: white;
+}
+.menu .medium:hover {
+  background: #ca8a04;
+}
+
+.menu .hard {
+  background: #ef4444;
+  color: white;
+}
+.menu .hard:hover {
+  background: #dc2626;
+}
+
+.help button,
+.scores button,
+.exit {
+  margin-top: 20px;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 12px;
+  background: #e2e8f0;
+  cursor: pointer;
+}
+
+.game .stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  font-weight: 600;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.word-display {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 8px;
+  padding: 20px 0;
+  background: #f1f5f9;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  font-family: 'Courier New', monospace;
+}
+
+.game form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.game input {
+  flex: 1;
+  min-width: 150px;
+  padding: 12px 16px;
+  font-size: 1.2rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 12px;
+  outline: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.game input:focus {
+  border-color: #3b82f6;
+}
+
+.game button[type='submit'] {
+  padding: 12px 24px;
+  background: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.game button[type='submit']:hover {
+  background: #16a34a;
+}
+
+.message {
+  margin: 12px 0;
+  font-weight: 600;
+  min-height: 28px;
+}
+
+.correct-word {
+  font-size: 1.2rem;
+  margin: 12px 0;
+}
+
+.play-again {
+  margin-top: 20px;
+  padding: 10px 24px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.play-again:hover {
+  background: #2563eb;
+}
+
+.scores .level-board {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 20px;
+}
+
+.scores .level-board:last-child {
+  border-bottom: none;
+}
+
+.scores .leaderboard {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.scores .board-column {
+  flex: 1;
+  min-width: 120px;
+}
+
+.scores .board-column ol {
+  padding-left: 20px;
+  margin: 8px 0;
+}
+
+.scores .board-column li {
+  padding: 4px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.no-scores {
+  font-style: italic;
+  color: #94a3b8;
+}
+
+.name-entry input {
+  padding: 10px;
+  font-size: 1.2rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 12px;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.name-entry button {
+  padding: 10px 30px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.name-entry button:hover {
+  background: #2563eb;
+}
+
+.name-entry form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ---- Subscription Prompt ---- */
+.subscription-prompt {
+  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+  border: 2px solid #3b82f6;
+  border-radius: 24px;
+}
+
+.subscription-prompt .subscribe-btn {
+  padding: 14px 40px;
+  background: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.subscription-prompt .subscribe-btn:hover {
+  background: #16a34a;
+}
+
+.subscription-prompt .skip-btn {
+  padding: 10px 30px;
+  background: #e2e8f0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* ---- Bonus Round ---- */
+.bonus-round .word-display {
+  font-size: 3rem;
+  letter-spacing: 10px;
+}
+
+.bonus-round .message {
+  font-size: 1.1rem;
+}
+
+/* ---- Stats ---- */
+.stats span {
+  background: #f1f5f9;
+  padding: 4px 12px;
+  border-radius: 12px;
+}

@@ -1,0 +1,14 @@
+word_puzzle/
+├── src/
+│   ├── App.js
+│   ├── App.css
+│   ├── api.js
+│   ├── bonusPhrases.js
+│   └── index.js
+|   └──supabase/
+│      └── supabase.js
+| 
+├── .env
+├── package.json
+└── public/
+    └── index.html
