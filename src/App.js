@@ -40,8 +40,8 @@ export default App;**/
 
 import React, { useState, useEffect } from 'react';
 import './App.css';
-/*import { supabase } from './supabase/supabase';
-import { fetchMultipleWords } from './api';*/
+import { supabase } from './supabase/supabase';
+import { fetchMultipleWords } from './api';
 import { bonusPhrases } from './bonusPhrases';
 
 // ============================================================
