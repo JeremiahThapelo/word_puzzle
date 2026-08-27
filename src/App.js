@@ -121,7 +121,7 @@ function App() {
   useEffect(() => {
     fetchCountry();
     fetchAllScores();
-  }, []);
+  }, [isLoadingWords]);
 
   // Load words when level changes
   useEffect(() => {
