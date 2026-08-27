@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+/**import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
   );
 }
 
-export default App;
+export default App;**/
 
 /**
  * Word Puzzle Game — Main Application
@@ -40,8 +40,8 @@ export default App;
 
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { supabase } from './supabase/supabase';
-import { fetchMultipleWords } from './api';
+/*import { supabase } from './supabase/supabase';
+import { fetchMultipleWords } from './api';*/
 import { bonusPhrases } from './bonusPhrases';
 
 // ============================================================
